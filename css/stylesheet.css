@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    margin: 0px 50px 0px 20px
+    margin: 0px 50px 0px 50px
 }
 
 a {
@@ -173,13 +173,13 @@ padding: 12px;
 }
 
 .activity {
-    display: inline-block;
+display: inline-block;
 float: left;
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+  display: grid; 
+  grid-template-columns: 33% 33% 33%;
 }
 
 .box {
@@ -214,7 +214,8 @@ float: left;
 .starsOn[data-active=true] {
     color: #0065FC;
   }
-  .starsOn[data-active=false] {
+
+.starsOn[data-active=false] {
     color: #d9d9d9;
   }
 
