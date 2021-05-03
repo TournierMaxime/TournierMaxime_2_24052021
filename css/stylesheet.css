@@ -6,19 +6,63 @@
 /*BALISES*/
 html {
     font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 body {
-    margin: 0px 50px 0px 50px
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.2em;
+}
 
 h2 {
-    font-size: 14px;;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 0.7em;
+}
+
+p {
+    font-size: 1em;
 }
 
 li {
@@ -33,17 +77,10 @@ li {
 }
 /*END BALISE*/
 
-.title {
-    font-size: 16px;
-}
-
-.subtitle {
-    font-size: 12px;
-}
-
 /*HEADER*/
-.header {
-    margin: 30px 0px 0px 0px;
+
+.logo {
+    width: 64px;
 }
 
 .menu {
@@ -55,34 +92,30 @@ li {
     margin-right: 40px;
 }
 
-.logo {
-    width: 64px;
+.linkMenu:hover {
+    border-top: 2px solid #0065FC;
+    border-radius: 2px;
+    color: #0065FC;
+    padding-top: 24px;
 }
 
 .signUp {
     color:#0065FC;
 }
 
-.linkMenu:focus {
-    border-top: 2px solid #0065FC;
-    border-radius: 2px;
-    color: #0065FC;
-    padding-top: 29px;
-}
 /*END HEADER*/
 
 /*FORM*/
 .formSearch{
-    display: flex;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 .submit {
-    /*background-color: #0065FC;
-    color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;*/
-    background-color: #0065FC;
+  background-color: #0065FC;
   color: white;
   border: none;
   border-radius: 0 10px 10px 0;
@@ -96,7 +129,6 @@ li {
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
     padding: 12px;
-    box-sizing: border-box;
     font-weight: bold;
   }
 
@@ -109,23 +141,26 @@ li {
 /*END FORM*/
 
 /*FILTERS*/
-.filters strong {
-    margin-right: 30px;
-}
 
 .filter-category {
     border-radius: 35px;
     text-align: center;
     border: 1px solid RGB(220, 220, 220);
-    padding: 6px 20px 4px 5px;
-    margin: 0px 15px 0px 0px;
     color: black;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px 15px 0px 0px;
 }
 
 .filter-category:hover {
     background-color: whitesmoke;
+}
+
+.filter-category a {
+    padding-left: 10px;
 }
 
 .icon {
@@ -134,12 +169,15 @@ li {
     border-radius: 100%;
     font-size: 16px;
     padding: 8px;
-    margin: 20px 10px 0px -6px;
     width: 1.15em;
 }
 
-.filters a {
-    margin-right: 20px;
+.filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*END FILTERS*/
@@ -156,59 +194,40 @@ li {
     height: 14px;
 }
 
+/*HOSTING*/
+
 .hosting {
-float: left;
-background-color: #F2F2F2;
-width: 60%;
-border-radius: 15px;
-padding:24px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
 
-.popular {
-float: right;
-background-color: #F2F2F2;
-width: 30%;
-border-radius: 15px;
-padding: 12px;
-}
-
-.activity {
-display: inline-block;
-float: left;
 }
 
 .card {
-  display: grid; 
-  grid-template-columns: 33% 33% 33%;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .box {
     background-color: white;
     border-radius: 20px;
-    height: 12em;
-    box-sizing: border-box;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.box:hover {
-    filter: brightness(95%);
-    color: black;
-}
-
-.boxImg {
+.box img {
     width: 12em;
     height: 6em;
     padding: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
-}
-
-.infosHosting {
-    margin: 0px 0px 0px 10px;
-    font-size: 14px;
-    line-height: 1.5em;
 }
 
 .starsOn[data-active=true] {
