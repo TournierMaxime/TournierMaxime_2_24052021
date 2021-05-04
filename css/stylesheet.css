@@ -29,12 +29,20 @@ header {
     padding-top: 20px;
 }
 
+p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
@@ -59,10 +67,6 @@ h5 {
 
 h6 {
     font-size: 0.7em;
-}
-
-p {
-    font-size: 1em;
 }
 
 li {
@@ -183,15 +187,20 @@ li {
 /*END FILTERS*/
 
 .informations {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.iconInfo {
     color: #0065FC;
     border-radius: 50%;
     border: 1px solid #F2F2F2;
     padding:10px;
     text-align:center;
-    margin: auto;
-    display:flex;
     width:14px;
     height: 14px;
+    margin-right: 10px;
 }
 
 /*HOSTING*/
@@ -204,30 +213,47 @@ li {
 
 }
 
-.card {
+.cardHost, .cardPopular {
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 15px;
+}
+
+.box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: space-between;
 }
 
-.box {
+.cardHost article {
     background-color: white;
     border-radius: 20px;
+    margin: 15px;
 }
 
-.box img {
+.cardHost article img {
     width: 12em;
     height: 6em;
     padding: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
     
+}
+
+.cardHost {
+    width: 70%;
+}
+
+
+.cardPopular {
+    width: 20%;
+}
+
+h4, p, .stars {
+    padding: 0px 0px 10px 10px;
 }
 
 .starsOn[data-active=true] {
