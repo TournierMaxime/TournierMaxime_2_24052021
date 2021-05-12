@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     align-content: stretch;
     align-items: stretch;
+    width: 100%;
 }
 
 header {
