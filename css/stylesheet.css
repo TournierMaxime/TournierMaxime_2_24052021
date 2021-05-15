@@ -6,16 +6,13 @@
 /*BALISES*/
 html {
     font-family: Raleway;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
 }
 
 body {
-    margin: 0px 50px 0px 50px;
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-content: stretch;
     align-items: stretch;
     width: 100%;
 }
@@ -23,18 +20,14 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px 35px 0px;
+    margin: 2em;
 }
 
 p {
-    margin: 0px;
-    padding: 0px;
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 a {
@@ -43,9 +36,6 @@ a {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 5px;
 }
 
 h1 {
@@ -85,18 +75,17 @@ li {
 
 .menu {
     float: right;
-    margin: 0px 20px 0px 0px;
 }
 
 .linkMenu {
-    margin-right: 40px;
+    margin-right: 4em;
 }
 
 .linkMenu:hover {
-    border-top: 2px solid #0065FC;
-    border-radius: 2px;
+    border-top: 0.5em solid #0065FC;
+    border-radius: 0.1em;
     color: #0065FC;
-    padding-top: 24px;
+    padding-top: 2.2em;
 }
 
 .signUp {
@@ -106,6 +95,10 @@ li {
 /*END HEADER*/
 
 /*FORM*/
+.search {
+    margin-left: 2em;
+}
+
 .formSearch{
     display: flex;
     flex-direction: row;
@@ -144,16 +137,12 @@ li {
 
 .filters {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
+    align-items: baseline;
 }
 
-.filter-category {
-    border-radius: 35px;
+.filterCategory {
+    border-radius: 1em;
     text-align: center;
     border: 1px solid RGB(220, 220, 220);
     color: black;
@@ -162,23 +151,22 @@ li {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding: 0px 15px 0px 0px;
+    padding-right: 1em;
     list-style-type: none;
-    margin: 20px;
-    margin-left: 0px;
-    font-size: 18px;
+    margin: 1em;
+    font-size: 1em;
 }
 
-.filter-category:hover {
+.filterCategory:hover {
     background-color: whitesmoke;
 }
 
-.filter-category a {
-    padding-left: 10px;
+.filterCategory a {
+    padding-left: 1em;
 }
 
 .filter {
-    padding-right: 15px;
+    padding-right: 1em;
     font-weight: bolder;
 }
 
@@ -186,8 +174,8 @@ li {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    font-size: 16px;
-    padding: 8px;
+    font-size: 1em;
+    padding: 0.5em;
     width: 1.15em;
 }
 
@@ -195,20 +183,23 @@ li {
 
 .informations {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin: 0em 0em 2em 2em;
 }
 
 .iconInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     color: #0065FC;
     border-radius: 50%;
     border: 1px solid #F2F2F2;
-    padding:10px;
     text-align:center;
-    width:14px;
-    height: 14px;
-    margin-right: 10px;
+    padding: 0.5em;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 1em;
 }
 
 /*HOSTING*/
@@ -216,34 +207,36 @@ li {
 .hosting {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-left: 2em;
+    margin-right: 2em;
 
 }
 
 .cardHosting, .cardPopular {
     background-color: #F2F2F2;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 /*cardHosting*/
 
 .cardHosting {
-    width: 70%;
+    width: 80%;
 }
 
 .cardHosting article {
     background-color: white;
-    border-radius: 20px;
-    margin: 15px;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 .cardHosting article img {
     width: 12em;
     height: 6em;
-    padding: 5px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 0.3em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
     
 }
@@ -254,27 +247,27 @@ li {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .boxHosting article {
-    box-shadow: 0px 2px 10px #0000002e;
+    box-shadow: 0em 0.5em 1em #0000002e;
 }
 
 .infosBoxHosting {
     margin: auto;
-    padding-left: 15px;
+    padding-left: 1em;
 }
 
 .dtHosting {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
 .ddHosting {
     font-size: 0.8em;
     margin: auto;
-    margin: 5px 0px 5px 0px;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 /*END cardHosting*/
@@ -287,16 +280,16 @@ li {
 
 .cardPopular article {
     background-color: white;
-    border-radius: 20px;
-    margin: 15px;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 .cardPopular article img {
     width: 8em;
     height: 8em;
-    padding: 5px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding: 0.3em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
     object-fit: cover;
     
 }
@@ -316,7 +309,7 @@ li {
 }
 
 .boxPopular article {
-    box-shadow: 0px 2px 10px #0000002e;
+    box-shadow: 0em 0.5em 1em #0000002e;
 }
 
 .infosBoxPopular {
@@ -324,7 +317,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 0px 30px 0px 5px;
+    padding: 0em 0.5em 0em 0.5em;
 }
 
 .linkPopular {
@@ -333,13 +326,13 @@ li {
 }
 
 .dtPopular {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
 .ddPopular {
     font-size: 0.8em;
-    margin: 5px 0px 5px 0px;
+    margin: 0.5em 0em 0.5cdem 0em;
 }
 
 /*END cardPopular*/
@@ -347,19 +340,20 @@ li {
 /*cardActivity*/
 
 .cardActivity {
-    width: 100%;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .cardActivity article {
-    border-radius: 20px;
-    margin: 5px;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 .cardActivity article img {
     width: 14em;
     height: 16em;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
     
 }
@@ -367,8 +361,8 @@ li {
 .cardActivity .articleSmall img {
     width: 14em;
     height: 8em;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
     
 }
@@ -378,11 +372,11 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px 0px 20px 0px;
+    margin: 1em 0em 1em 0em;
 }
 
 .boxActivity article {
-    box-shadow: 0px 2px 10px #0000002e;
+    box-shadow: 0em 0.5em 1em #0000002e;
 }
 
 .boxActivity .articleBig img {
@@ -393,12 +387,12 @@ li {
 .duo .articleSmall {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .infosBoxActivity {
     margin: auto;
-    padding: 15px;
+    padding: 1em;
 }
 
 .dtActivity {
@@ -424,7 +418,6 @@ li {
 
 footer {
     height: 100%;
-    margin: 0px -50px 0px -50px;
 }
 
 .sitemap {
@@ -441,16 +434,17 @@ footer {
     width: 33%;
 }
 
-.links li h5 {
-    margin-bottom: 10px;
-}
-
 .links li a {
     display: flex;
     flex-direction: column;
     font-size: 0.7em;
-    margin-bottom: 5px;
-    padding: 0px;
+    margin-bottom: 0.5em;
+}
+
+.headTitleFooter {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 /*END FOOTER*/
