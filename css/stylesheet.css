@@ -69,7 +69,7 @@ li {
 /*HEADER*/
 
 .logo {
-    width: 64px;
+    width: 4em;
 }
 
 .menu {
@@ -89,6 +89,7 @@ li {
 
 .signUp {
     color:#0065FC;
+    font-weight: bold;
 }
 
 /*END HEADER*/
@@ -447,3 +448,82 @@ footer {
 }
 
 /*END FOOTER*/
+
+
+/*RESPONSIVE*/
+
+
+/*MOBILE SMALL*/
+
+@media only screen and (min-device-width:320px) and (max-device-width:425px) {
+
+    header {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .linkMenu {
+        display: inline-block;
+    }
+
+    .logo{
+        display: flex;
+        width: 40%;
+    }
+
+    .signUp {
+        display: flex;
+    }
+
+    .submit {
+        display: none;
+    }
+    
+    .iconSubmit {
+        background-image: url("../images/search-solid.jpg");
+        color: white;
+    }
+
+   
+
+}
+
+/*END MOBILE SMALL*/
+
+/*MOBILE BIG*/
+
+@media only screen and (min-device-width:425px) and (max-device-width:768px) {
+
+}
+
+/*END MOBILE BIG*/
+
+/*TABLETTE*/
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    
+}
+
+/*END TABLETTE*/
+
+/*DESKTOP*/
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1440px) {
+    
+}
+
+/*END DESKTOP*/
+
+/*TV AND OTHERS*/
+
+@media only screen and (min-device-width:1440px) {
+    
+}
+
+/*END TV AND OTHERS*/
+
+
+/*END RESPONSIVE*/
