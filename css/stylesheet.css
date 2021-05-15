@@ -305,7 +305,7 @@ li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: stretch;
     justify-content: space-between;
 }
 
@@ -458,35 +458,7 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
-    header {
-        display: flex;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    .linkMenu {
-        display: inline-block;
-    }
-
-    .logo{
-        display: flex;
-        width: 40%;
-    }
-
-    .signUp {
-        display: flex;
-    }
-
-    .submit {
-        display: none;
-    }
-    
-    .iconSubmit {
-        background-image: url("../images/search-solid.jpg");
-        color: white;
-    }
+   
 
    
 
@@ -496,7 +468,7 @@ footer {
 
 /*MOBILE BIG*/
 
-@media only screen and (min-device-width:425px) and (max-device-width:768px) {
+@media only screen and (min-device-width:426px) and (max-device-width:768px) {
 
 }
 
@@ -504,7 +476,51 @@ footer {
 
 /*TABLETTE*/
 
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+@media only screen and (min-device-width:769px) and (max-device-width:1024px) {
+
+    .cardHosting {
+        width: 60%;
+    }
+
+    .cardPopular {
+        width: 40%;
+    }
+
+    .cardHosting article img {
+        width: 12em;
+        height: 6em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .cardPopular article img {
+        width: 7em;
+        height: 7em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .dtPopular {
+        font-size: 1em;
+    }
+    
+    .ddPopular {
+        font-size: 1em;
+    }
+
+    .dtHosting {
+        font-size: 1em;
+    }
+    
+    .ddHosting {
+        font-size: 1em;
+    }
     
 }
 
@@ -512,15 +528,156 @@ footer {
 
 /*DESKTOP*/
 
-@media only screen and (min-device-width:1024px) and (max-device-width:1440px) {
+@media only screen and (min-device-width:1025px) and (max-device-width:1440px) {
+
+    .cardHosting {
+        width: 70%;
+    }
+
+    .cardPopular {
+        width: 30%;
+    }
+
+    .cardHosting article img {
+        width: 14em;
+        height: 7em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .cardPopular article img {
+        width: 8em;
+        height: 8em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .dtPopular {
+        font-size: 1em;
+    }
+    
+    .ddPopular {
+        font-size: 1em;
+    }
+
+    .dtHosting {
+        font-size: 1em;
+    }
+    
+    .ddHosting {
+        font-size: 1em;
+    }
     
 }
 
 /*END DESKTOP*/
 
+/*BIG DESKTOP*/
+
+@media only screen and (min-device-width:1441px) and (max-device-width:1920px) { 
+
+    .cardHosting {
+        width: 80%;
+    }
+
+    .cardPopular {
+        width: 20%;
+    }
+
+    .cardHosting article img {
+        width: 20em;
+        height: 10em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .cardPopular article img {
+        width: 8em;
+        height: 8em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .dtPopular {
+        font-size: 0.8em;
+    }
+    
+    .ddPopular {
+        font-size: 0.8em;
+    }
+
+    .dtHosting {
+        font-size: 1em;
+    }
+    
+    .ddHosting {
+        font-size: 1em;
+    }
+
+ }
+
+/*END BIG DESKTOP*/
+
 /*TV AND OTHERS*/
 
-@media only screen and (min-device-width:1440px) {
+@media only screen and (min-device-width:1921px) {
+
+    .cardHosting {
+        width: 80%;
+    }
+
+    .cardPopular {
+        width: 20%;
+    }
+
+    .cardHosting article img {
+        width: 28em;
+        height: 16em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .cardPopular article img {
+        width: 12em;
+        height: 12em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .dtPopular {
+        font-size: 1em;
+    }
+    
+    .ddPopular {
+        font-size: 1em;
+    }
+
+    .dtHosting {
+        font-size: 1em;
+    }
+    
+    .ddHosting {
+        font-size: 1em;
+    }
+    
     
 }
 
