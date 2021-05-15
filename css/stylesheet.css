@@ -450,7 +450,6 @@ footer {
 
 /*END FOOTER*/
 
-<<<<<<< HEAD
 
 /*RESPONSIVE*/
 
@@ -529,13 +528,3 @@ footer {
 
 
 /*END RESPONSIVE*/
-=======
-@media (min-device-width:1024px) {
-    .cardHosting {
-        width:70%;
-    }
-    .cardPopular {
-        width: 30%;
-    }
-}
->>>>>>> 9213a509dfa1fb7ea6cf14110e6e999faf326046
