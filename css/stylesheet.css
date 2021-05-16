@@ -458,9 +458,71 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
-   
+    .hosting {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: stretch;
+        align-content: flex-start;
+    }
 
-   
+    .cardHosting {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+        background-color: white;
+    }
+
+    .cardPopular {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+        background-color: white;
+        width: 100%;
+    }
+
+    .cardPopular article {
+        background-color: white;
+        border-radius: 1em;
+        margin: 1em;
+    }
+    
+    .cardPopular article img {
+        width: 8em;
+        height: 8em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .boxPopular article a img {
+        width: 50%;
+    }
+
+    .boxPopular article a .infosBoxPopular {
+        width: 50%;
+    }
+
+    .cardActivity {
+        margin: auto;
+    }
+    
+    .boxActivity {
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    .sitemap {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -469,6 +531,72 @@ footer {
 /*MOBILE BIG*/
 
 @media only screen and (min-device-width:426px) and (max-device-width:768px) {
+
+    .hosting {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: stretch;
+        align-content: flex-start;
+    }
+
+    .cardHosting {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+        background-color: white;
+    }
+
+    .cardPopular {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+        background-color: white;
+        width: 100%;
+    }
+
+    .cardPopular article {
+        background-color: white;
+        border-radius: 1em;
+        margin: 1em;
+    }
+    
+    .cardPopular article img {
+        width: 8em;
+        height: 8em;
+        padding: 0.3em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        object-fit: cover;
+        
+    }
+
+    .boxPopular article a img {
+        width: 50%;
+    }
+
+    .boxPopular article a .infosBoxPopular {
+        width: 50%;
+    }
+
+    .cardActivity {
+        margin: auto;
+    }
+    
+    .boxActivity {
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    .sitemap {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
