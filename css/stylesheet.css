@@ -458,6 +458,11 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
+    .filters {
+        display: flex;
+        flex-direction: column;
+    }
+
     .hosting {
         display: flex;
         flex-direction: column-reverse;
@@ -531,6 +536,11 @@ footer {
 /*MOBILE BIG*/
 
 @media only screen and (min-device-width:426px) and (max-device-width:768px) {
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+    }
 
     .hosting {
         display: flex;
