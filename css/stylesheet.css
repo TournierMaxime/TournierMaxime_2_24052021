@@ -572,7 +572,7 @@ footer {
     .cardPopular article {
         background-color: white;
         border-radius: 1em;
-        margin: 1em;
+        margin: auto;
     }
     
     .cardPopular article img {
