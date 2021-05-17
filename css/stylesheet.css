@@ -112,24 +112,24 @@ li {
   background-color: #0065FC;
   color: white;
   border: none;
-  border-radius: 0 10px 10px 0;
-  padding: 12px;
+  border-radius: 0em 0.8em 0.8em 0em;
+  padding: 1em;
   cursor: pointer;
 }
 
 .inputSearch {
     border-right: none;
     border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding: 12px;
+    border-top: #F2F2F2 0.1em solid;
+    border-bottom: #F2F2F2 0.1em solid;
+    padding: 1em;
     font-weight: bold;
   }
 
   .iconSearch {
     background-color: #F2F2F2;
-    padding: 12px;
-    border-radius: 10px 0 0 10px;
+    padding: 1em;
+    border-radius: 1em 0em 0em 1em;
     text-align: center;
   }
 /*END FORM*/
@@ -145,7 +145,7 @@ li {
 .filterCategory {
     border-radius: 1em;
     text-align: center;
-    border: 1px solid RGB(220, 220, 220);
+    border: 0.1em solid RGB(220, 220, 220);
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -195,7 +195,7 @@ li {
     justify-content: space-evenly;
     color: #0065FC;
     border-radius: 50%;
-    border: 1px solid #F2F2F2;
+    border: 0.1em solid #F2F2F2;
     text-align:center;
     padding: 0.5em;
     width: 0.8em;
