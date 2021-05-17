@@ -132,6 +132,10 @@ li {
     border-radius: 1em 0em 0em 1em;
     text-align: center;
   }
+
+  .iconSubmit {
+      display: none;
+  }
 /*END FORM*/
 
 /*FILTERS*/
@@ -458,6 +462,11 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .filters {
         display: flex;
         flex-direction: column;
@@ -527,6 +536,21 @@ footer {
     .sitemap {
         display: flex;
         flex-direction: column;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    .iconSubmit {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 0.3em;
+        color: white;
+        width: 4em;
     }
 
 }
