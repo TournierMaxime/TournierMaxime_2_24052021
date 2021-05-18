@@ -6,15 +6,16 @@
 /*BALISES*/
 html {
     font-family: Raleway;
+    cursor: default;
+
 }
 
 body {
     width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    
+    margin: 2em 2em 0em 2em;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 2em;
+    margin: 0em 2em 1em 2em;
 }
 
 p {
@@ -74,7 +75,7 @@ li {
 }
 
 .menu {
-    float: right;
+    margin-right: 2em;
 }
 
 .linkMenu {
@@ -129,7 +130,7 @@ li {
   .iconSearch {
     background-color: #F2F2F2;
     padding: 1em;
-    border-radius: 1em 0em 0em 1em;
+    border-radius: 0.5em 0em 0em 0.5em;
     text-align: center;
   }
 
@@ -144,6 +145,7 @@ li {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    padding-left: 2em;
 }
 
 .filterCategory {
@@ -182,6 +184,7 @@ li {
     font-size: 1em;
     padding: 0.5em;
     width: 1.15em;
+    margin-left: -0.1em;
 }
 
 /*END FILTERS*/
@@ -190,7 +193,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0em 0em 2em 2em;
+    margin-left: 2em;
 }
 
 .iconInfo {
@@ -212,22 +215,25 @@ li {
 .hosting {
     display: flex;
     justify-content: space-between;
-    margin-left: 2em;
-    margin-right: 2em;
-
+    margin: 0em 2em 2em 2em;
 }
 
 .cardHosting, .cardPopular {
     background-color: #F2F2F2;
-    padding: 1em;
     border-radius: 1em;
-    margin: 1em;
+}
+
+.more {
+    font-weight: bold;
+    margin-left: 1em;
 }
 
 /*cardHosting*/
 
 .cardHosting {
     width: 80%;
+    margin-right: 1em;
+    padding: 1em;
 }
 
 .cardHosting article {
@@ -246,11 +252,22 @@ li {
     
 }
 
+.host {
+    margin-left: 1em;
+}
+
+.popular {
+    margin-left: 1em;
+}
+
+.iconPopular {
+    margin-right: 1em;
+}
+
 .boxHosting {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
     justify-content: space-between;
     margin-bottom: 1em;
 }
@@ -281,6 +298,9 @@ li {
 
 .cardPopular {
     width: 20%;
+    margin-left: 1em;
+    padding: 1em;
+    margin-right: 2em;
 }
 
 .cardPopular article {
@@ -345,13 +365,12 @@ li {
 /*cardActivity*/
 
 .cardActivity {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 0em 4em 2em 2em
 }
 
-.cardActivity article {
+.boxActivity article {
     border-radius: 1em;
-    margin: 1em;
+    margin: initial;
 }
 
 .cardActivity article img {
@@ -377,7 +396,6 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: 1em 0em 1em 0em;
 }
 
 .boxActivity article {
@@ -423,6 +441,7 @@ li {
 
 footer {
     height: 100%;
+    margin-left: -2em;
 }
 
 .sitemap {
@@ -557,7 +576,7 @@ footer {
 
 /*END MOBILE SMALL*/
 
-/*MOBILE BIG*/
+/*TABLET*/
 
 @media only screen and (min-device-width:426px) and (max-device-width:768px) {
 
@@ -634,216 +653,7 @@ footer {
 
 }
 
-/*END MOBILE BIG*/
-
-/*TABLETTE*/
-
-@media only screen and (min-device-width:769px) and (max-device-width:1024px) {
-
-    .cardHosting {
-        width: 60%;
-    }
-
-    .cardPopular {
-        width: 40%;
-    }
-
-    .cardHosting article img {
-        width: 12em;
-        height: 6em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .cardPopular article img {
-        width: 7em;
-        height: 7em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .dtPopular {
-        font-size: 1em;
-    }
-    
-    .ddPopular {
-        font-size: 1em;
-    }
-
-    .dtHosting {
-        font-size: 1em;
-    }
-    
-    .ddHosting {
-        font-size: 1em;
-    }
-    
-}
-
-/*END TABLETTE*/
-
-/*DESKTOP*/
-
-@media only screen and (min-device-width:1025px) and (max-device-width:1440px) {
-
-    .cardHosting {
-        width: 70%;
-    }
-
-    .cardPopular {
-        width: 30%;
-    }
-
-    .cardHosting article img {
-        width: 14em;
-        height: 7em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .cardPopular article img {
-        width: 8em;
-        height: 8em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .dtPopular {
-        font-size: 1em;
-    }
-    
-    .ddPopular {
-        font-size: 1em;
-    }
-
-    .dtHosting {
-        font-size: 1em;
-    }
-    
-    .ddHosting {
-        font-size: 1em;
-    }
-    
-}
-
-/*END DESKTOP*/
-
-/*BIG DESKTOP*/
-
-@media only screen and (min-device-width:1441px) and (max-device-width:1920px) { 
-
-    .cardHosting {
-        width: 80%;
-    }
-
-    .cardPopular {
-        width: 20%;
-    }
-
-    .cardHosting article img {
-        width: 20em;
-        height: 10em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .cardPopular article img {
-        width: 8em;
-        height: 8em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .dtPopular {
-        font-size: 0.8em;
-    }
-    
-    .ddPopular {
-        font-size: 0.8em;
-    }
-
-    .dtHosting {
-        font-size: 1em;
-    }
-    
-    .ddHosting {
-        font-size: 1em;
-    }
-
- }
-
-/*END BIG DESKTOP*/
-
-/*TV AND OTHERS*/
-
-@media only screen and (min-device-width:1921px) {
-
-    .cardHosting {
-        width: 80%;
-    }
-
-    .cardPopular {
-        width: 20%;
-    }
-
-    .cardHosting article img {
-        width: 28em;
-        height: 16em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .cardPopular article img {
-        width: 12em;
-        height: 12em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .dtPopular {
-        font-size: 1em;
-    }
-    
-    .ddPopular {
-        font-size: 1em;
-    }
-
-    .dtHosting {
-        font-size: 1em;
-    }
-    
-    .ddHosting {
-        font-size: 1em;
-    }
-    
-    
-}
-
-/*END TV AND OTHERS*/
+/*END TABLET*/
 
 
 /*END RESPONSIVE*/
