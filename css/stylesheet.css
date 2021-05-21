@@ -87,7 +87,7 @@ li {
     border-top: 0.5em solid #0065FC;
     border-radius: 0.1em;
     color: #0065FC;
-    padding-top: 2.7em;
+    padding-top: 2.2em;
 }
 
 .signUp {
@@ -313,7 +313,8 @@ li {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     object-fit: cover;
-    
+    width: 8em;
+    height: 8em;
 }
 
 .headerCardPopular {
@@ -374,7 +375,8 @@ li {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     object-fit: cover;
-    
+    width: 12em;
+    height: 8em;
 }
 
 .cardActivity .articleSmall img {
@@ -475,6 +477,80 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
+
+        body {
+            margin: auto;
+        }
+
+       .linkMenu {
+           display: flex;
+       }
+
+        .submit {
+            display: none;
+        }
+
+        .iconSubmit {
+            display: flex;
+            background-color: #0065FC;
+            color: white;
+            align-items: center;
+            border-radius: 30%;
+            padding: 1.2em;
+            border: none;
+        }
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hosting {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: auto;
+        }
+
+        .cardPopular {
+            width: 100%;
+            
+        }
+
+        .cardHosting {
+            width: 100%;
+            background-color: white;
+        }
+
+        .cardHosting article img {
+            width: 80vw;
+            height: 20vh;
+        }
+
+        .cardActivity {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .cardActivity article img {
+            width: 80vw;
+            height: 20vh;
+        }
+
+        .boxActivity {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boxActivity article img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .sitemap {
+            display: flex;
+            flex-direction: column;
+        }
     
 
 }
