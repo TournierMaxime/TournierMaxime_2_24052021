@@ -7,6 +7,7 @@
 html {
     font-family: Raleway;
     cursor: default;
+    overflow-x: hidden;
 
 }
 
@@ -15,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: 2em 2em 0em 2em;
+    margin: auto;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0em 2em 1em 2em;
+    margin: 2em 2em 1em 2em;
 }
 
 p {
@@ -86,7 +87,7 @@ li {
     border-top: 0.5em solid #0065FC;
     border-radius: 0.1em;
     color: #0065FC;
-    padding-top: 2.2em;
+    padding-top: 2.7em;
 }
 
 .signUp {
@@ -231,7 +232,6 @@ li {
 /*cardHosting*/
 
 .cardHosting {
-    width: 80%;
     margin-right: 1em;
     padding: 1em;
 }
@@ -297,7 +297,6 @@ li {
 /*cardPopular*/
 
 .cardPopular {
-    width: 20%;
     margin-left: 1em;
     padding: 1em;
     margin-right: 2em;
@@ -310,8 +309,6 @@ li {
 }
 
 .cardPopular article img {
-    width: 8em;
-    height: 8em;
     padding: 0.3em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
@@ -374,8 +371,6 @@ li {
 }
 
 .cardActivity article img {
-    width: 14em;
-    height: 16em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     object-fit: cover;
@@ -441,7 +436,6 @@ li {
 
 footer {
     height: 100%;
-    margin-left: -2em;
 }
 
 .sitemap {
@@ -481,96 +475,7 @@ footer {
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
 
-    .menu {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .filters {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hosting {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-items: stretch;
-        align-content: flex-start;
-    }
-
-    .cardHosting {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: stretch;
-        background-color: white;
-    }
-
-    .cardPopular {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: stretch;
-        background-color: white;
-        width: 100%;
-    }
-
-    .cardPopular article {
-        background-color: white;
-        border-radius: 1em;
-        margin: 1em;
-    }
     
-    .cardPopular article img {
-        width: 8em;
-        height: 8em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .boxPopular article a img {
-        width: 50%;
-    }
-
-    .boxPopular article a .infosBoxPopular {
-        width: 50%;
-    }
-
-    .cardActivity {
-        margin: auto;
-    }
-    
-    .boxActivity {
-        display: flex;
-        flex-direction: column;
- 
-    }
-
-    .sitemap {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .submit {
-        display: none;
-    }
-
-    .iconSubmit {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #0065FC;
-        border: none;
-        border-radius: 0.3em;
-        color: white;
-        width: 4em;
-    }
 
 }
 
@@ -580,80 +485,41 @@ footer {
 
 @media only screen and (min-device-width:426px) and (max-device-width:768px) {
 
-    .filters {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hosting {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-items: stretch;
-        align-content: flex-start;
-    }
-
-    .cardHosting {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: stretch;
-        background-color: white;
-    }
-
-    .cardPopular {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: stretch;
-        background-color: white;
-        width: 100%;
-    }
-
-    .cardPopular article {
-        background-color: white;
-        border-radius: 1em;
-        margin: auto;
-    }
     
-    .cardPopular article img {
-        width: 8em;
-        height: 8em;
-        padding: 0.3em;
-        border-top-left-radius: 1em;
-        border-bottom-left-radius: 1em;
-        object-fit: cover;
-        
-    }
-
-    .boxPopular article a img {
-        width: 50%;
-    }
-
-    .boxPopular article a .infosBoxPopular {
-        width: 50%;
-    }
-
-    .cardActivity {
-        margin: auto;
-    }
-    
-    .boxActivity {
-        display: flex;
-        flex-direction: column;
- 
-    }
-
-    .sitemap {
-        display: flex;
-        flex-direction: column;
-    }
 
 }
 
 /*END TABLET*/
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .cardHosting {
+        width: 70%;
+    }
+
+    .cardPopular {
+        width: 30%;
+    }
+
+    .cardHosting article img {
+        width: 15vw;
+        height: 17vh;
+    }
+
+    .cardPopular article img {
+        width: 8vw;
+        height: 18vh;
+    }
+
+    .cardActivity .articleBig img {
+        width: 18vw;
+    }
+
+    .cardActivity .articleSmall img {
+        width: 17vw;
+    }
+
+}
 
 
 /*END RESPONSIVE*/
