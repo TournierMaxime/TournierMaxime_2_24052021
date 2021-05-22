@@ -7,24 +7,28 @@
 html {
     font-family: Raleway;
     cursor: default;
-    overflow-x: hidden;
 
 }
 
 body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin: auto;
+    margin: 0;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em 2em 1em 2em;
+  display: grid;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
 }
 
 p {
@@ -71,35 +75,82 @@ li {
 
 /*HEADER*/
 
-.logo {
-    width: 4em;
-}
-
-.menu {
-    margin-right: 2em;
-}
-
-.linkMenu {
-    margin-right: 4em;
-}
-
-.linkMenu:hover {
-    border-top: 0.5em solid #0065FC;
-    border-radius: 0.1em;
+.headerImg {
+    height: 3em;
+  }
+  .headerNav {
+    display: flex;
+    align-items: center;
+    grid-area: navbar;
+  }
+  .headerNavLink {
+    padding: 2em;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+  }
+  .headerNavLink[data-active=true] {
     color: #0065FC;
-    padding-top: 2.2em;
-}
-
-.signUp {
-    color:#0065FC;
-    font-weight: bold;
-}
+  }
+  .headerNavLink:hover {
+    color: #0065FC;
+  }
+  .headerSignup {
+    display: flex;
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+  }
+  
+  @media screen and (min-width: 601px) {
+    header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+    .headerNavLink[data-active=true] {
+      border-top: 3px solid #0065FC;
+    }
+    .headerNavLink:hover {
+      border-top: 3px solid #0065FC;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    header {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    .headerimg {
+      order: 0;
+    }
+    .headerSignup {
+      order: 1;
+    }
+    .headerNav {
+      order: 2;
+    }
+    .headerNavLink {
+      border-top: none;
+      border-bottom: 3px solid #F2F2F2;
+      width: 50%;
+    }
+    .headerNavLink[data-active=true] {
+      border-bottom-color: #0065FC;
+    }
+    .headerNavLink:hover {
+      border-bottom-color: #0065FC;
+    }
+  }
 
 /*END HEADER*/
 
 /*FORM*/
 .search {
-    margin-left: 2em;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .formSearch{
@@ -146,7 +197,7 @@ li {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    padding-left: 2em;
+    padding: 0;
 }
 
 .filterCategory {
@@ -194,7 +245,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 2em;
+    margin: 0;
+    margin-bottom: 2em;
 }
 
 .iconInfo {
@@ -216,7 +268,7 @@ li {
 .hosting {
     display: flex;
     justify-content: space-between;
-    margin: 0em 2em 2em 2em;
+    margin: 0;
 }
 
 .cardHosting, .cardPopular {
@@ -226,12 +278,13 @@ li {
 
 .more {
     font-weight: bold;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 /*cardHosting*/
 
 .cardHosting {
+    width: 70%;
     margin-right: 1em;
     padding: 1em;
 }
@@ -242,9 +295,9 @@ li {
     margin: 1em;
 }
 
-.cardHosting article img {
-    width: 12em;
-    height: 6em;
+.boxHosting article img {
+    width: 14em;
+    height: 7em;
     padding: 0.3em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -253,7 +306,7 @@ li {
 }
 
 .host {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .popular {
@@ -268,7 +321,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 1em;
 }
 
@@ -297,6 +350,7 @@ li {
 /*cardPopular*/
 
 .cardPopular {
+    width: 30%;
     margin-left: 1em;
     padding: 1em;
     margin-right: 2em;
@@ -363,7 +417,7 @@ li {
 /*cardActivity*/
 
 .cardActivity {
-    margin: 0em 4em 2em 2em
+    margin: 0;
 }
 
 .cardActivity article img {
@@ -432,11 +486,10 @@ li {
 
 /*FOOTER*/
 
-footer {
-    height: 100%;
-}
-
 .sitemap {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
@@ -448,6 +501,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 33%;
+    padding: 0;
 }
 
 .links li a {
@@ -522,9 +576,6 @@ footer {
             align-items: flex-start;
         }
 
-        .popular {
-            flex: 55%;
-        }
 
         .iconPopular {
             flex: auto;
