@@ -324,7 +324,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 1em;
+    margin: 1em 1em;
 }
 
 .boxHosting article {
@@ -384,6 +384,7 @@ li {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
+    margin: 0em 1em;
 }
 
 .boxPopular article {
@@ -433,15 +434,6 @@ li {
     
 }
 
-.cardActivity .articleSmall img {
-    width: 18em;
-    height: 8em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    object-fit: cover;
-    
-}
-
 .boxActivity {
     display: flex;
     flex-direction: row;
@@ -452,6 +444,14 @@ li {
 .boxActivity article {
     box-shadow: 0em 0.5em 1em #0000002e;
     border-radius: 1em;
+}
+
+.boxActivity img {
+    width: 18em;
+    height: 8em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    object-fit: cover;
 }
 
 .boxActivity .articleBig img {
