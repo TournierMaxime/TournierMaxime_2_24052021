@@ -19,11 +19,13 @@ header {
   align-items: center;
   max-width: 1440px;
   margin: auto;
+  padding: 0 2em;
 }
 
 main {
     max-width: 1440px;
     margin: auto;
+    padding: 0 2em;
 }
 
 footer {
@@ -353,7 +355,6 @@ li {
     width: 30%;
     margin-left: 1em;
     padding: 1em;
-    margin-right: 2em;
 }
 
 .cardPopular article {
@@ -418,6 +419,7 @@ li {
 
 .cardActivity {
     margin: 0;
+    margin-right: 2em;
 }
 
 .cardActivity article img {
@@ -648,37 +650,17 @@ li {
 
 }
 
-/*END TABLET*/
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-
-    .cardHosting {
-        width: 70%;
-    }
-
-    .cardPopular {
-        width: 30%;
-    }
-
-    .cardHosting article img {
-        width: 15vw;
-        height: 17vh;
-    }
+@media only screen and (min-device-width:1024px) and (max-device-width:1439px) {
 
     .cardPopular article img {
-        width: 8vw;
-        height: 18vh;
-    }
-
-    .cardActivity .articleBig img {
-        width: 18vw;
-    }
-
-    .cardActivity .articleSmall img {
-        width: 17vw;
+        width: 6em;
+        height: 6em;
     }
 
 }
+
+/*END TABLET*/
+
 
 
 /*END RESPONSIVE*/
