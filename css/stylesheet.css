@@ -332,14 +332,20 @@ li {
     box-shadow: 0em 0.5em 1em #0000002e;
 }
 
+.boxHosting article h5 {
+    margin: 0.5em 1em;
+    font-size: 1em;
+}
+
 .infosBoxHosting {
-    margin: auto;
+    margin: 0;
     padding-left: 1em;
 }
 
 .dtHosting {
     font-size: 0.8em;
     font-weight: bold;
+    margin: 0;
 }
 
 .ddHosting {
@@ -393,23 +399,31 @@ li {
     margin: 1em 0;
 }
 
-.infosBoxPopular {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 0.5em;
-    margin: 0;
-}
-
 .linkPopular {
     display: flex;
-    align-items: stretch;
+}
+
+.popularDescription {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin: 0 0.5em;
+}
+
+.popularDescription h5 {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.infosBoxPopular {
+    padding: 0;
+    margin: 0;
 }
 
 .dtPopular {
     font-size: 0.8em;
     font-weight: bold;
+    margin: 0;
 }
 
 .ddPopular {
@@ -466,12 +480,9 @@ li {
     margin-bottom: 1em;
 }
 
-.infosBoxActivity {
+.boxActivity article h5 {
     margin: auto;
     padding: 1em;
-}
-
-.dtActivity {
     font-size: 0.8em;
     font-weight: bolder;
 }
@@ -531,7 +542,7 @@ li {
 
 /*MOBILE SMALL*/
 
-@media only screen and (min-device-width:320px) and (max-device-width:425px) {
+@media only screen and (min-width: 320px) and (max-width: 425px) {
 
 
         body {
@@ -648,13 +659,13 @@ li {
 
 /*TABLET*/
 
-@media only screen and (min-device-width:426px) and (max-device-width:768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
 
     
 
 }
 
-@media only screen and (min-device-width:1024px) and (max-device-width:1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .cardPopular article img {
         width: 6em;
