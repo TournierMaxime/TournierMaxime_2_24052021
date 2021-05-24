@@ -245,6 +245,18 @@ li {
     margin-left: 2em;
 }
 
+.host {
+    margin-left: 1em;
+}
+
+.popular {
+    margin-left: 1em;
+}
+
+.iconPopular {
+    margin-right: 1em;
+}
+
 /*cardHosting*/
 
 .cardHosting {
@@ -259,28 +271,6 @@ li {
     margin: 1em;
 }
 
-.boxHosting article img {
-    width: 14em;
-    height: 7em;
-    padding: 0.3em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    object-fit: cover;
-    
-}
-
-.host {
-    margin-left: 2em;
-}
-
-.popular {
-    margin-left: 1em;
-}
-
-.iconPopular {
-    margin-right: 1em;
-}
-
 .boxHosting {
     display: flex;
     flex-direction: row;
@@ -291,6 +281,14 @@ li {
 
 .boxHosting article {
     box-shadow: 0em 0.5em 1em #0000002e;
+    padding: 0.3em;
+    flex: auto;
+}
+
+.boxHosting article img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    object-fit: cover;
 }
 
 .boxHosting article h5 {
@@ -331,13 +329,11 @@ li {
     margin: 1em;
 }
 
-.cardPopular article img {
+.boxPopular article img {
     padding: 0.3em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     object-fit: cover;
-    width: 8em;
-    height: 8em;
 }
 
 .headerCardPopular {
@@ -357,8 +353,6 @@ li {
 
 .boxPopular article {
     box-shadow: 0em 0.5em 1em #0000002e;
-    width: 100%;
-    margin: 1em 0;
 }
 
 .linkPopular {
@@ -591,6 +585,12 @@ li {
 
         .boxPopular article {
             width: 100%;
+            margin: 1em 0;
+        }
+
+        .boxPopular article img {
+            width: 7em;
+            height: 7em;
         }
 
         .boxPopular {
@@ -699,23 +699,40 @@ li {
 
 /*TABLET*/
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1023px) {
 
     
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/*END TABLET*/
 
-    .cardPopular article img {
-        width: 6em;
-        height: 6em;
-        
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+    .boxHosting article {
+        width: calc(100% / 4);
+    }
+    
+    .boxHosting article img {
+        width: 100%;
+        height: 7em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        object-fit: cover;
+        max-width: 100%;
     }
 
-    .cardHosting article img {
-        width: 10em;
-        height: 5em;
+    .boxPopular article {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .boxPopular article img {
+        width: 30%;
+        height: 7em;
+        
     }
 
     .cardActivity .articleBig img {
@@ -731,8 +748,6 @@ li {
 
 }
 
-/*END TABLET*/
-
-
+/*END DESKTOP*/
 
 /*END RESPONSIVE*/
