@@ -540,6 +540,10 @@ li {
           margin: 0 1em;
       }
 
+      .inputSearch {
+          flex: auto;
+      }
+
       .filterCategory {
           margin: 0.5em 0;
       }
@@ -617,6 +621,11 @@ li {
         .boxHosting article {
             flex: auto;
             padding: 0.3em;
+        }
+
+        .boxActivity article h5 {
+            font-size: 1em;
+            font-weight: bold;
         }
 
         .cardActivity {
