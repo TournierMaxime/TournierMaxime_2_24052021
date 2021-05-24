@@ -616,6 +616,7 @@ li {
 
         .boxHosting article {
             flex: auto;
+            padding: 0.3em;
         }
 
         .cardActivity {
