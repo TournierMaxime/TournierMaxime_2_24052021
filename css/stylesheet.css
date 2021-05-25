@@ -93,9 +93,6 @@ li {
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
   }
-  .headerNavLink[data-active=true] {
-    color: #0065FC;
-  }
   .headerNavLink:hover {
     color: #0065FC;
   }
@@ -103,7 +100,7 @@ li {
     display: flex;
     align-items: center;
     grid-area: button;
-    padding: 2rem;
+    padding: 2em;
     color: #0065FC;
     font-weight: 600;
   }
@@ -326,7 +323,6 @@ li {
 .cardPopular article {
     background-color: white;
     border-radius: 1em;
-    margin: 1em;
 }
 
 .boxPopular article img {
@@ -340,6 +336,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 1em;
 }
 
 .boxPopular {
@@ -348,7 +345,7 @@ li {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 2em;
 }
 
 .boxPopular article {
@@ -686,9 +683,6 @@ li {
     header {
       grid-template-columns: auto 1fr auto auto;
       grid-template-areas: "logo . navbar button";
-    }
-    .headerNavLink[data-active=true] {
-      border-top: 3px solid #0065FC;
     }
     .headerNavLink:hover {
       border-top: 3px solid #0065FC;
