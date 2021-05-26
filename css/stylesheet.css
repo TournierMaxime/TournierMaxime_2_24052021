@@ -593,7 +593,7 @@ li {
         }
 
         .boxPopular {
-            margin: 0 1em;
+            margin: 0 2em;
             display: flex;
             align-items: flex-start;
         }
@@ -663,6 +663,7 @@ li {
         .sitemap {
             display: flex;
             flex-direction: column;
+            margin: 0 1em;
         }
 
         .headTitleFooter {
