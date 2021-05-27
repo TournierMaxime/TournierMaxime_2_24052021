@@ -246,14 +246,6 @@ li {
     margin-left: 1em;
 }
 
-.popular {
-    margin-left: 1em;
-}
-
-.iconPopular {
-    margin-right: 1em;
-}
-
 /*cardHosting*/
 
 .cardHosting {
@@ -338,7 +330,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 1em;
 }
 
 .boxPopular {
@@ -347,7 +338,6 @@ li {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
-    margin: 0 2em;
 }
 
 .boxPopular article {
@@ -395,45 +385,55 @@ li {
     margin-bottom: 2em;
 }
 
-.cardActivity article img {
+.boxActivity article img {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     object-fit: cover;
-    width: 16em;
-    
-}
-
-.cardActivity .articleSmall img {
-    width: 18em;
-    height: 8em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    object-fit: cover;
+    width: 100%;
     
 }
 
 .boxActivity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 }
 
 .boxActivity article {
     box-shadow: 0em 0.5em 1em #0000002e;
     border-radius: 1em;
+    width: 100%;
 }
 
-.boxActivity .articleBig img {
-    height: 85%;
+.act1 {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
 
-}
+.act2 {
+    grid-column: 2;
+    grid-row: 1/2;
+  }
 
-.duo .articleSmall {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
+.act3 {
+    grid-column: 2;
+    grid-row: 2/4;
+  }
+
+.act4 {
+    grid-column: 3;
+    grid-row: 1/4;
+  }
+
+.act5 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+.act6 {
+    grid-column: 4;
+    grid-row: 3/4;
+  }
 
 .boxActivity article h5 {
     margin: auto;
@@ -579,7 +579,6 @@ li {
         .cardPopular {
             width: 100%;
             margin: 1em 0;
-            padding: 0;
         }
 
         .boxPopular article {
@@ -593,23 +592,22 @@ li {
         }
 
         .boxPopular {
-            margin: 0 1em;
+            margin: 0;
             display: flex;
             align-items: flex-start;
         }
 
         .host {
-            margin: 0 1em;
+            margin: 0;
         }
 
         .more {
-            margin: 0 1em;
+            margin: 0;
         }
 
         .cardHosting {
             width: 100%;
             background-color: white;
-            padding: 0;
         }
 
         .boxHosting article img {
@@ -621,6 +619,7 @@ li {
         .boxHosting article {
             flex: auto;
             padding: 0.3em;
+            margin: 1em 0;
         }
 
         .boxActivity article h5 {
@@ -638,13 +637,7 @@ li {
             margin: 2em 1em;
         }
         
-        .boxActivity .articleBig img {
-            flex: auto;
-            width: 100%;
-            height: 20vh;
-        }
-
-        .boxActivity .articleSmall img {
+        .boxActivity article img {
             flex: auto;
             width: 100%;
             height: 20vh;
@@ -663,6 +656,7 @@ li {
         .sitemap {
             display: flex;
             flex-direction: column;
+            margin: 0 2em;
         }
 
         .headTitleFooter {
@@ -695,8 +689,6 @@ li {
 
 /*TABLET*/
 
-/*TABLET*/
-
 @media screen and (min-width: 601px) and (max-width: 1023px) {
 
     .filters {
@@ -723,8 +715,8 @@ li {
     }
 
     .boxPopular article {
-        margin: 1em 0;
-        max-width: 80%;
+        margin: 1em 1em;
+        width: -webkit-fill-available;
     }
 
     .boxPopular article img {
@@ -736,6 +728,7 @@ li {
     .boxPopular {
         display: flex;
         align-items: flex-start;
+        width: 100%;
     }
 
     .host {
@@ -758,7 +751,7 @@ li {
 
     .boxHosting article img {
         width: 100%;
-        height: 15vh;
+        height: 25vh;
         padding: 0;
         max-height: 80%;
     }
@@ -785,7 +778,7 @@ li {
 
     .boxActivity article img {
         width: 100%;
-        height: 15vh;
+        height: 25vh;
         padding: 0;
         max-height: 80%;
     }
@@ -827,8 +820,6 @@ li {
 
 /*END TABLET*/
 
-/*END TABLET*/
-
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) {
@@ -853,7 +844,7 @@ li {
 
     .boxPopular article img {
         width: 30%;
-        height: 7em;
+        height: 14vh;
         
     }
 
@@ -869,6 +860,12 @@ li {
    
 
 }
+
+@media screen and (max-width: 1440px) {
+    .sitemap {
+        margin: 0 2em;
+    }
+ }
 
 /*END DESKTOP*/
 
