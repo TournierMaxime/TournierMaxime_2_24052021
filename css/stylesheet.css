@@ -25,12 +25,10 @@ main {
     max-width: 1440px;
     margin: auto;
     padding: 0 2em;
-    width: 100%;
 }
 
 footer {
     background-color: #F2F2F2;
-    width: 100%;
     display: flex;
 }
 
