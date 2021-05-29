@@ -806,10 +806,14 @@ li {
         font-weight: bold;
     }
 
+    footer {
+        padding: 0 2em;
+    }
+
     .sitemap {
         display: flex;
         flex-direction: column;
-        margin: 0 2em;
+        margin: 0;
     }
 
     .headTitleFooter {
@@ -834,6 +838,10 @@ li {
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) {
+
+    footer {
+        padding: 0 2em;
+    }
 
     .boxHosting article {
         width: calc(100% / 4);
