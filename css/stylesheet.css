@@ -19,7 +19,6 @@ header {
   align-items: center;
   max-width: 1440px;
   margin: auto;
-  padding: 0 2em;
 }
 
 main {
@@ -702,6 +701,14 @@ li {
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
 
+    header {
+        padding: 0 1em;
+    }
+
+    main {
+        padding: 0 1em;
+    }
+
     .filters {
         display: flex;
         justify-content: flex-start;
@@ -807,7 +814,7 @@ li {
     }
 
     footer {
-        padding: 0 2em;
+        padding-left: 2em;
     }
 
     .sitemap {
@@ -838,6 +845,14 @@ li {
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) {
+
+    header {
+        padding: 0 1em;
+    }
+
+    main {
+        padding: 0 1em;
+    }
 
     footer {
         padding: 0 2em;
