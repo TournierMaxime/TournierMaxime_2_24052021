@@ -590,7 +590,6 @@ li {
         }
 
         .boxPopular article {
-            width: 100%;
             margin: 1em 0;
         }
 
@@ -661,10 +660,14 @@ li {
             flex: auto;
         }
 
+        footer {
+            padding: 0 1em;
+        }
+
         .sitemap {
             display: flex;
             flex-direction: column;
-            margin: 0 2em;
+            margin: 0;
         }
 
         .headTitleFooter {
@@ -868,12 +871,6 @@ li {
    
 
 }
-
-@media screen and (max-width: 1440px) {
-    .sitemap {
-        margin: 0 2em;
-    }
- }
 
 /*END DESKTOP*/
 
