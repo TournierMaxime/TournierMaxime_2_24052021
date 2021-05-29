@@ -693,7 +693,7 @@ li {
 
     .boxPopular article img {
         width: 33%;
-        height: 15vh;
+        height: 25vh;
         max-height: 80%;
     }
 
@@ -822,8 +822,8 @@ li {
 
     .boxPopular article img {
         width: 30%;
-        height: 11vh;
-        
+        height: 12vh;
+        max-height: 80%;
     }
 
     .boxActivity article img {
@@ -891,6 +891,14 @@ li {
       }
 
 }
+
+@media screen and (min-width: 1441px) { 
+    .boxPopular article img {
+        width: 33%;
+        height: 8vh;
+        max-height: 80%;
+    }
+ }
 
 /*END DESKTOP*/
 
