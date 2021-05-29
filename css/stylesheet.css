@@ -582,14 +582,16 @@ li {
         .cardPopular {
             width: 100%;
             margin: 1em 0;
+            padding: 0;
         }
 
         .headerCardPopular {
             margin: 0;
+            padding: 0 1em;
         }
 
         .boxPopular article {
-            margin: 1em 0;
+            margin: 1em;
         }
 
         .boxPopular article img {
@@ -604,16 +606,21 @@ li {
         }
 
         .host {
-            margin: 0;
+            margin: 0 1em;
         }
 
         .more {
-            margin: 0;
+            margin: 0 1em;
         }
 
         .cardHosting {
             width: 100%;
             background-color: white;
+            padding: 0;
+        }
+
+        .boxHosting {
+            padding: 0 1em;
         }
 
         .boxHosting article img {
@@ -652,21 +659,18 @@ li {
         .boxActivity {
             display: flex;
             flex-direction: column;
+            padding: 0 1em;
         }
 
         .boxActivity article {
-            margin: 0.5em 1em;
             flex: auto;
-        }
-
-        footer {
-            padding: 0 1em;
         }
 
         .sitemap {
             display: flex;
             flex-direction: column;
             margin: 0;
+            padding: 0 1em;
         }
 
         .headTitleFooter {
