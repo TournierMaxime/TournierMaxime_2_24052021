@@ -247,14 +247,6 @@ li {
     margin-left: 1em;
 }
 
-.popular {
-    margin-left: 1em;
-}
-
-.iconPopular {
-    margin-right: 1em;
-}
-
 /*cardHosting*/
 
 .cardHosting {
@@ -338,7 +330,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 1em;
 }
 
 .boxPopular {
@@ -347,7 +338,6 @@ li {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-between;
-    margin: 0 2em;
 }
 
 .boxPopular article {
@@ -592,7 +582,6 @@ li {
         .cardPopular {
             width: 100%;
             margin: 1em 0;
-            padding: 0;
         }
 
         .headerCardPopular {
@@ -610,23 +599,22 @@ li {
         }
 
         .boxPopular {
-            margin: 0 1em;
+            margin: 0;
             display: flex;
             align-items: flex-start;
         }
 
         .host {
-            margin: 0 1em;
+            margin: 0;
         }
 
         .more {
-            margin: 0 1em;
+            margin: 0;
         }
 
         .cardHosting {
             width: 100%;
             background-color: white;
-            padding: 0;
         }
 
         .boxHosting article img {
@@ -638,6 +626,7 @@ li {
         .boxHosting article {
             flex: auto;
             padding: 0.3em;
+            margin: 1em 0;
         }
 
         .boxActivity article h5 {
@@ -655,13 +644,7 @@ li {
             margin: 2em 1em;
         }
         
-        .boxActivity .articleBig img {
-            flex: auto;
-            width: 100%;
-            height: 20vh;
-        }
-
-        .boxActivity .articleSmall img {
+        .boxActivity article img {
             flex: auto;
             width: 100%;
             height: 20vh;
@@ -680,7 +663,7 @@ li {
         .sitemap {
             display: flex;
             flex-direction: column;
-            margin: 0 1em;
+            margin: 0 2em;
         }
 
         .headTitleFooter {
@@ -739,8 +722,8 @@ li {
     }
 
     .boxPopular article {
-        margin: 1em 0;
-        max-width: 80%;
+        margin: 1em 1em;
+        width: -webkit-fill-available;
     }
 
     .boxPopular article img {
@@ -752,6 +735,7 @@ li {
     .boxPopular {
         display: flex;
         align-items: flex-start;
+        width: 100%;
     }
 
     .host {
@@ -774,7 +758,7 @@ li {
 
     .boxHosting article img {
         width: 100%;
-        height: 15vh;
+        height: 25vh;
         padding: 0;
         max-height: 80%;
     }
@@ -801,7 +785,7 @@ li {
 
     .boxActivity article img {
         width: 100%;
-        height: 15vh;
+        height: 25vh;
         padding: 0;
         max-height: 80%;
     }
@@ -838,7 +822,7 @@ li {
     }
 
     
-
+ 
 }
 
 /*END TABLET*/
@@ -867,7 +851,7 @@ li {
 
     .boxPopular article img {
         width: 30%;
-        height: 7em;
+        height: 14vh;
         
     }
 
@@ -883,6 +867,12 @@ li {
    
 
 }
+
+@media screen and (max-width: 1440px) {
+    .sitemap {
+        margin: 0 2em;
+    }
+ }
 
 /*END DESKTOP*/
 
