@@ -647,7 +647,7 @@ li {
         } 
 
         .cardActivity h2 {
-            margin: 2em 1em;
+            margin: 1em;
         }
         
         .boxActivity article img {
@@ -664,6 +664,7 @@ li {
 
         .boxActivity article {
             flex: auto;
+            margin: 0.5em 0;
         }
 
         .sitemap {
