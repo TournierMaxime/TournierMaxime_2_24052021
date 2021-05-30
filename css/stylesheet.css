@@ -319,9 +319,9 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: stretch;
     justify-content: space-between;
-    max-height: 90%;
+    max-height: 80%;
 }
 
 .boxPopular article {
@@ -821,8 +821,8 @@ li {
     }
 
     .boxPopular article img {
-        width: 30%;
-        height: 12vh;
+        width: 35%;
+        height: 18vh;
         max-height: 80%;
     }
 
