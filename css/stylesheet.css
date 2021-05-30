@@ -174,10 +174,12 @@ li {
     list-style-type: none;
     margin: 1em;
     font-size: 1em;
+    transition-duration: 0.5s;
 }
 
 .filterCategory:hover {
-    background-color: whitesmoke;
+    background-color: #DEEBFF;
+    transform: scale(1.05);
 }
 
 .filterCategory a {
@@ -274,7 +276,12 @@ li {
     flex: auto;
     max-width: 100%;
     max-height: 100%;
+    transition-duration: 0.5s;
 }
+
+.boxHosting article:hover { 
+    transform: scale(1.05);
+ } 
 
 .boxHosting article img {
     border-top-left-radius: 1em;
@@ -330,7 +337,12 @@ li {
     flex: auto;
     max-width: 100%;
     max-height: 100%;
+    transition-duration: 0.5s;
 }
+
+.boxPopular article:hover { 
+    transform: scale(1.05);
+ } 
 
 .boxPopular article img {
     border-top-left-radius: 1em;
@@ -385,7 +397,12 @@ li {
     border-radius: 1em;
     width: 100%;
     height: 100%;
+    transition-duration: 0.5s;
 }
+
+.boxActivity article:hover { 
+    transform: scale(1.05);
+ } 
 
 .boxActivity article img {
     border-top-left-radius: 1em;
