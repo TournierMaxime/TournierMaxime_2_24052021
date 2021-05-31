@@ -839,8 +839,7 @@ li {
 
     .boxPopular article img {
         width: 35%;
-        height: 18vh;
-        max-height: 80%;
+        height: 13vh;
     }
 
     .boxActivity article img {
@@ -912,8 +911,7 @@ li {
 @media screen and (min-width: 1441px) { 
     .boxPopular article img {
         width: 33%;
-        height: 8vh;
-        max-height: 80%;
+        height: 11vh;
     }
  }
 
