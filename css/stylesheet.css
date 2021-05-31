@@ -600,7 +600,7 @@ li {
 
         .boxHosting article img {
             width: 100%;
-            height: 20vh;
+            height: 10em;
             padding: 0;
         }
 
@@ -633,7 +633,7 @@ li {
         .boxActivity article img {
             flex: auto;
             width: 100%;
-            height: 20vh;
+            height: 10em;
         }
 
         .sitemap {
@@ -710,7 +710,7 @@ li {
 
     .boxPopular article img {
         width: 33%;
-        height: 25vh;
+        height: 10em;
         max-height: 80%;
     }
 
@@ -739,7 +739,7 @@ li {
 
     .boxHosting article img {
         width: 100%;
-        height: 25vh;
+        height: 10em;
         padding: 0;
         max-height: 80%;
     }
@@ -766,7 +766,7 @@ li {
 
     .boxActivity article img {
         width: 100%;
-        height: 25vh;
+        height: 10em;
         padding: 0;
         max-height: 80%;
     }
@@ -839,7 +839,7 @@ li {
 
     .boxPopular article img {
         width: 35%;
-        height: 13vh;
+        height: 8em;
     }
 
     .boxActivity article img {
@@ -907,13 +907,6 @@ li {
       }
 
 }
-
-@media screen and (min-width: 1441px) { 
-    .boxPopular article img {
-        width: 33%;
-        height: 11vh;
-    }
- }
 
 /*END DESKTOP*/
 
