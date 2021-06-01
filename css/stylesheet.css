@@ -115,10 +115,6 @@ li {
 
 .formSearch{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
 }
 
 .submit {
@@ -155,7 +151,6 @@ li {
 
 .filters {
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
     padding: 0;
 }
@@ -167,8 +162,6 @@ li {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
     align-items: baseline;
     padding-right: 1em;
     list-style-type: none;
@@ -206,8 +199,6 @@ li {
 .informations {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 0;
     margin-bottom: 2em;
 }
 
@@ -229,8 +220,6 @@ li {
 
 .hosting {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
     width: 100%;
 }
 
@@ -264,9 +253,7 @@ li {
 
 .boxHosting {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin-bottom: 1em;
 }
 
@@ -274,8 +261,6 @@ li {
     box-shadow: 0em 0.5em 1em #0000002e;
     padding: 0.3em;
     flex: auto;
-    max-width: 100%;
-    max-height: 100%;
     transition-duration: 0.5s;
 }
 
@@ -322,21 +307,13 @@ li {
 }
 
 .boxPopular {
-    height: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-between;
-    max-height: 80%;
 }
 
 .boxPopular article {
     box-shadow: 0em 0.5em 1em #0000002e;
     padding: 0.3em;
-    flex: auto;
-    max-width: 100%;
-    max-height: 100%;
     transition-duration: 0.5s;
 }
 
@@ -395,8 +372,6 @@ li {
 .boxActivity article {
     box-shadow: 0em 0.5em 1em #0000002e;
     border-radius: 1em;
-    width: 100%;
-    height: 100%;
     transition-duration: 0.5s;
 }
 
@@ -408,7 +383,6 @@ li {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     object-fit: cover;
-    width: 100%;
     
 }
 
@@ -440,21 +414,15 @@ li {
     margin: auto;
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
     width: 33%;
     padding: 0;
 }
 
 .links li a {
     display: flex;
-    flex-direction: column;
     font-size: 0.7em;
     margin-bottom: 0.5em;
 }
@@ -537,7 +505,6 @@ li {
         }
 
         .filters {
-            display: flex;
             flex-direction: column;
             margin: 1em 1em;
         }
@@ -560,11 +527,6 @@ li {
         .headerCardPopular {
             margin: 0;
             padding: 0 1em;
-        }
-
-        .boxPopular {
-            margin: 0;
-            align-items: flex-start;
         }
 
         .boxPopular article {
@@ -609,12 +571,6 @@ li {
             font-weight: bold;
         }
 
-        .cardActivity {
-            display: flex;
-            flex-direction: column;
-            
-        } 
-
         .cardActivity h2 {
             margin: 1em;
         }
@@ -626,12 +582,10 @@ li {
         }
 
         .boxActivity article {
-            flex: auto;
             margin: 0.5em 0;
         }
         
         .boxActivity article img {
-            flex: auto;
             width: 100%;
             height: 10em;
         }
@@ -699,23 +653,18 @@ li {
         margin: 0 1em;
     }
 
-    .boxPopular {
-        align-items: flex-start;
-        width: 100%;
-    }
-
     .boxPopular article {
         margin: 1em 1em;
+        width: 100%;
     }
 
     .boxPopular article img {
         width: 33%;
         height: 10em;
-        max-height: 80%;
     }
 
     .host {
-        margin: 1em 2em;
+        margin: 0 1.5em;
     }
 
     .more {
@@ -729,7 +678,7 @@ li {
     }
 
     .boxHosting {
-        margin: 0 2em;
+        margin: 0 1em;
     }
 
     .boxHosting article {
@@ -741,11 +690,9 @@ li {
         width: 100%;
         height: 10em;
         padding: 0;
-        max-height: 80%;
     }
 
     .cardActivity {
-        width: 100%;
         margin: 2em 0;
         padding: 0;
     }
@@ -753,7 +700,6 @@ li {
     .boxActivity {
         margin: 0;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -768,7 +714,6 @@ li {
         width: 100%;
         height: 10em;
         padding: 0;
-        max-height: 80%;
     }
 
     .boxActivity article h5 {
@@ -829,11 +774,9 @@ li {
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         object-fit: cover;
-        max-width: 100%;
     }
 
     .boxPopular article {
-        width: 100%;
         margin: 1em 0;
     }
 
@@ -848,32 +791,26 @@ li {
 
     .boxActivity .act1 img {
         height: 90%;
-        max-height: 90%;
     }
 
     .boxActivity .act2 img {
         height: 85%;
-        max-height: 85%;
     }
 
     .boxActivity .act3 img {
         height: 75%;
-        max-height: 75%;
     }
 
     .boxActivity .act4 img {
         height: 90%;
-        max-height: 90%;
     }
 
     .boxActivity .act5 img {
         height: 80%;
-        max-height: 80%;
     }
 
     .boxActivity .act6 img {
         height: 80%;
-        max-height: 80%;
     }
 
     .act1 {
