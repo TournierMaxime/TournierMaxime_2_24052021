@@ -148,6 +148,10 @@ li {
 /*END FORM*/
 
 /*FILTERS*/
+.mainFilters {
+    display: flex;
+    align-items: baseline;
+}
 
 .filters {
     display: flex;
@@ -230,7 +234,7 @@ li {
 
 .more {
     font-weight: bold;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .host {
@@ -504,9 +508,14 @@ li {
             border: none;
         }
 
+        .mainFilters {
+            flex-direction: column;
+            margin: 0em 1em;
+        }
+
         .filters {
             flex-direction: column;
-            margin: 1em 1em;
+            margin: 0em 0em 1em 0em;
         }
 
         .informations {
