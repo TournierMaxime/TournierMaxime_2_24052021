@@ -271,6 +271,7 @@ li {
   padding: 0.3em;
   flex: auto;
   transition-duration: 0.5s;
+  width: 100%;
 }
 
 .boxHosting article:hover {
@@ -324,6 +325,7 @@ li {
   box-shadow: 0em 0.5em 1em #0000002e;
   padding: 0.3em;
   transition-duration: 0.5s;
+  width: 100%;
 }
 
 .boxPopular article:hover {
@@ -544,7 +546,7 @@ li {
   }
 
   .boxPopular article img {
-    width: 30%;
+    width: 6em;
     height: 6em;
   }
 
@@ -666,7 +668,7 @@ li {
   }
 
   .boxPopular article img {
-    width: 33%;
+    width: 10em;
     height: 10em;
   }
 
@@ -784,8 +786,10 @@ li {
   }
 
   .boxPopular article img {
-    width: 35%;
+    width: 8em;
     height: 8em;
+    max-width: 10em;
+    min-width: 8em;
   }
 
   .boxActivity article img {
